@@ -107,10 +107,15 @@ describe('Super Galactic Yet To Pass Planetary Birthdays', () => {
     const mercuryYearsYetToPass = humanInput.mercuryYearsYetToPass();
     expect(mercuryYearsYetToPass).toEqual(200 + " Mercury years yet to pass");
   });
-
+//test 15
   test('it should return the correct amount of venusYearsYetToPass when called', () => {
     const venusYearsYetToPass = humanInput.venusYearsYetToPass();
     expect(venusYearsYetToPass).toEqual(77.41935483870968 + " Venus years yet to pass");
+  });
+
+  test('it should return the correct amount of marsYearsYetToPass when called', () => {
+    const marsYearsYetToPass = humanInput.marsYearsYetToPass();
+    expect(marsYearsYetToPass).toEqual(25.531914893617024 + " Mars years yet to pass");
   });
 
 });
