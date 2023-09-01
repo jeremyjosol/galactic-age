@@ -44,6 +44,11 @@ export default class GalacticAgeCalculator {
     let marsYearsPassed = this.earthYearsPassed();
     return marsYearsPassed / this.marsAge + " Mars years have passed";
   }
+
+  jupiterYearsPassed(){
+    let jupiterYearsPassed = this.earthYearsPassed();
+    return jupiterYearsPassed / this.jupiterAge + " Jupiter years have passed";
+  }
 }
 
 
