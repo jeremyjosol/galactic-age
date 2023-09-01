@@ -1,6 +1,7 @@
 export default class GalacticAgeCalculator {
   
-  constructor(age){
-    this.age = age;
+  constructor(earthAge){
+    this.earthAge = earthAge;
   }
+
 }

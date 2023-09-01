@@ -8,11 +8,10 @@ describe('Super Galactic Age Calculator', () => {
     expect(humanInput.earthAge).toEqual(27);
 });
 
-  test('it should convert earthAge and return the correct number in mercuryAge when the mercuryYears function is called', () => {
+  test('it should convert earthAge when the mercuryYears function is called and return the correct number in mercuryAge', () => {
     const earthAge = 27;
     const humanInput = new GalacticAgeCalculator(earthAge);
     const mercuryAge = humanInput.mercuryYears(); 
     expect(mercuryAge).toEqual(6.48);
 });
-
 });
