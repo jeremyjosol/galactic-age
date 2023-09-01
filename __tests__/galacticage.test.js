@@ -59,22 +59,23 @@ describe('Super Galactic Passed Birthdays', () => {
 });
 
 describe('Super Galactic Passed Planetary Birthdays', () => {
+  let humanInput;
   const earthAge = 27;
   const passedEarthAge = 10;
 
   beforeEach(() => {
-    let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
+    humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
 });
 //test 9 pass
   test('it should return the correct amount of mercuryYearsPassed when called', () => {
-    let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
+    humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
     const mercuryYearsPassed = humanInput.mercuryYearsPassed();
     expect(mercuryYearsPassed).toEqual(70.83333333333334);
 });
 //test 10
   test('it should return the correct amount of venusYearsPassed when called', () => {
     const venusYearsPassed = humanInput.venusYearsPassed();
-    expect(venusYearsPassed).toEqual(27.419354838709676)
+    expect(venusYearsPassed).toEqual(27.419354838709676 + "venus years have passed");
   });
 });
 

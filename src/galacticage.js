@@ -34,6 +34,11 @@ export default class GalacticAgeCalculator {
     let mercuryYearsPassed = this.earthYearsPassed();
     return mercuryYearsPassed / this.mercuryAge;
   }
+
+  venusYearsPassed(){
+    let venusYearsPassed = this.earthYearsPassed();
+    return venusYearsPassed / this.venusAge + "venus years have passed";
+  }
 }
 
 
