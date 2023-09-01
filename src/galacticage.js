@@ -10,7 +10,8 @@ export default class GalacticAgeCalculator {
   }
 
   venusYears(){
-    
+    const venusAge = 0.62;
+    return this.earthAge * venusAge;
   }
 
 }
