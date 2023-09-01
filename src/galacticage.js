@@ -15,6 +15,7 @@ export default class GalacticAgeCalculator {
   }
 
   marsYears(){
-    
+    const marsAge = 1.88;
+    return this.earthAge * marsAge;
   }
 }
