@@ -40,8 +40,8 @@ describe('Super Galactic Passed Birthdays', () => {
   const earthAge = 27;
   const pastEarthAge = 10;
 //test 6
-  test('it should return the difference of two parameters');
+  test('it should return the difference of two parameters', () => {
   const ageDifference = earthAge - pastEarthAge;
   expect(ageDifference).toEqual(17);
-  
+});
 });
