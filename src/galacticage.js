@@ -20,6 +20,7 @@ export default class GalacticAgeCalculator {
   }
 
   jupiterYears(){
-  
+    const jupiterAge = 11.86;
+    return this.earthAge * jupiterAge;
   }
 }
