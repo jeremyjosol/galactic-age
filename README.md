@@ -26,7 +26,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
     ```
      git clone https://github.com/jeremyjosol/sep12023_galacticage
     ```
-  2. After successfully cloning down the repository, navigate to the **'projectname_project'** directory, if the file is located in your desktop, enter the following command:
+  2. After successfully cloning down the repository, navigate to the **'sep12023_galacticage'** directory, if the file is located in your desktop, enter the following command:
       ```
        cd sep12023_galacticage
 3. Before you can use or deploy the project, make sure to install its dependencies. Run the following command in your terminal:
