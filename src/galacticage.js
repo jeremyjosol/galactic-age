@@ -32,7 +32,7 @@ export default class GalacticAgeCalculator {
 
   mercuryYearsPassed(){
     let mercuryYearsPassed = this.earthYearsPassed();
-    return mercuryYearsPassed / 0.24;
+    return mercuryYearsPassed / this.mercuryAge;
   }
 }
 
