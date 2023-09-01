@@ -5,6 +5,12 @@ export default class GalacticAgeCalculator {
   }
 
   mercuryYears(){
+    const mercuryAge = 0.24;
+    return this.earthAge * mercuryAge;
+  }
+
+  venusYears(){
+    
   }
 
 }
