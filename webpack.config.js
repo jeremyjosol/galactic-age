@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devServer: {
+    devServer: {
       contentBase: "./dist",
     },
   devtool: 'eval-source-map',
@@ -21,7 +21,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'galacticage',
+      title: 'new_project_title_here',
       template: './src/index.html',
       inject: 'body'
     })
@@ -34,23 +34,7 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      },
-
-      {
-        test: /\.(gif|png|avif|jpe?g)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "[name][ext]",
-          publicPath: "assets/images/",
-          outputPath: "assets/images/",
-        },
-      },
-      {
-        test:/\.html$/,
-        use: [
-          'html-loader'
-        ]
-      },
+      }
     ]
   }
 };
