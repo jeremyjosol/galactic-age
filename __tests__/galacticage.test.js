@@ -82,6 +82,11 @@ describe('Super Galactic Passed Planetary Birthdays', () => {
     const marsYearsPassed = humanInput.marsYearsPassed();
     expect(marsYearsPassed).toEqual(9.042553191489363 + " Mars years have passed");
   });
+//test 12
+  test('it should return the correct amount of jupiterYearsPassed when called', () => {
+    const jupiterYearsPassed = humanInput.jupiterYearsPassed();
+    expect(jupiterYearsPassed).toEqual(1.4333895446880272 + " Jupiter years have passed")
+  });
 
 });
 
