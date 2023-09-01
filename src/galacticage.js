@@ -4,4 +4,7 @@ export default class GalacticAgeCalculator {
     this.earthAge = earthAge;
   }
 
+  mercuryYears(){
+  }
+
 }
