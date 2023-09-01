@@ -31,4 +31,3 @@ export default class YearsYetToPassCalculator extends GalacticAgeCalculator {
     return jupiterYearsYetToPass / this.jupiterAge + " Jupiter years yet to pass";
   }
 }
-
