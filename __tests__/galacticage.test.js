@@ -1,6 +1,5 @@
-// import Constructor from './../src/javascript.js';
 // Super Galactic Age Calculator
-
+import GalacticAgeCalculator from './../src/galacticage.js';
 
 describe('Super Galactic Age Calculator', () => {
 
