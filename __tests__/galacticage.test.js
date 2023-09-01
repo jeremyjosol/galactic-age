@@ -37,22 +37,18 @@ describe('Super Galactic Age Calculator', () => {
 
 describe('Super Galactic Passed Birthdays', () => {
   const earthAge = 27;
-  const pastEarthAge = 10;
+  const passedEarthAge = 10;
 //test 6 pass
   test('it should return the difference of two parameters', () => {
-  const ageDifference = earthAge - pastEarthAge;
+  const ageDifference = earthAge - passedEarthAge;
   expect(ageDifference).toEqual(17);
 });
 //test 7
   test('it should return the difference of two parameters and multiply it by mercuryYears', () => {
-  const ageDifference = earthAge - pastEarthAge;
+  const ageDifference = earthAge - passedEarthAge;
   let humanInput = new GalacticAgeCalculator(ageDifference);
-  const passedBirthdays = humanInput.mercuryYears()
-
-
-
-
-  
+  const passedBirthdays = humanInput.mercuryYears();
+  expect(passedBirthdays).toEqual(70.83333333333334);
 
 });
 
