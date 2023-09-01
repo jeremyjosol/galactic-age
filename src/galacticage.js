@@ -14,4 +14,7 @@ export default class GalacticAgeCalculator {
     return this.earthAge * venusAge;
   }
 
+  marsYears(){
+    
+  }
 }
