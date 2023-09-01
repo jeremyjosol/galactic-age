@@ -97,10 +97,15 @@ describe('Super Galactic Yet To Pass Planetary Birthdays', () => {
     const futureEarthAge = 75;
     humanInput = new GalacticAgeCalculator(earthAge, undefined, futureEarthAge);
   });
-//test 13
+//test 13 pass
   test('it should return the correct amount of earthYearsYetToPass when called', () => {
     const earthYearsYetToPass = humanInput.earthYearsYetToPass();
     expect(earthYearsYetToPass).toEqual(48);
+  });
+//test 14
+  test('it should return the correct amount of mercuryYearsYetToPass when called', () => {
+    const mercuryYearsYetToPass = humanInput.mercuryYearsYetToPass();
+    expect(mercuryYearsYetToPass).toEqual(200)
   });
 
 });
