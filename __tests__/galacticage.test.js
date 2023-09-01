@@ -28,5 +28,4 @@ describe('Super Galactic Age Calculator', () => {
     const marsAge = humanInput.marsYears();
     expect(marsAge).toEqual(50.76);
 });
-
 });
