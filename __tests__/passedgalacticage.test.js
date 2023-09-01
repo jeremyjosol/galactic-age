@@ -1,4 +1,4 @@
-import PassedGalacticAgeCalculator from './../src/js/passedgalacticage.js'
+import PassedGalacticAgeCalculator from './../src/js/passedgalacticage.js';
 
 describe('PassedGalacticAgeCalculator', () => {
   const earthAge = 27;
