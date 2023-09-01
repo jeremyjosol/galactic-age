@@ -21,7 +21,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'new_project_title_here',
+      title: 'galacticage',
       template: './src/index.html',
       inject: 'body'
     })
