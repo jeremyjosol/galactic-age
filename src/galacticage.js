@@ -70,6 +70,11 @@ export default class GalacticAgeCalculator {
     let marsYearsYetToPass = this.earthYearsYetToPass();
     return marsYearsYetToPass / this.marsAge + " Mars years yet to pass";
   }
+
+  jupiterYearsYetToPass(){
+    let jupiterYearsYetToPass = this.earthYearsYetToPass();
+    return jupiterYearsYetToPass / this.jupiterAge + " Jupiter years yet to pass";
+  }
 }
 
 
