@@ -23,9 +23,15 @@ describe('Super Galactic Age Calculator', () => {
     const venusAge = humanInput.venusYears();
     expect(venusAge).toEqual(16.74);
 });
-//test 4
+//pass test 4
   test('it should convert earthAge when the marsYears function is called and return the correct number in marsAge', () => {
     const marsAge = humanInput.marsYears();
     expect(marsAge).toEqual(50.76);
 });
+//test 5
+  test('it should convert earthAge when the jupiterYears function is called and return the correct number in jupiterAge', () => {
+    const jupiterAge = humanInput.jupiterYears();
+    expect(jupiterAge).toEqual(320.112);
+});
+
 });
