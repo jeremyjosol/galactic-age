@@ -18,4 +18,8 @@ export default class GalacticAgeCalculator {
     const marsAge = 1.88;
     return this.earthAge * marsAge;
   }
+
+  jupiterYears(){
+  
+  }
 }
