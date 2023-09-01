@@ -1,8 +1,9 @@
 export default class GalacticAgeCalculator {
   
-  constructor(earthAge, passedEarthAge){
+  constructor(earthAge, passedEarthAge, futureEarthAge){
     this.earthAge = earthAge;
     this.passedEarthAge = passedEarthAge;
+    this.futureEarthAge = futureEarthAge;
     this.mercuryAge = 0.24;
     this.venusAge = 0.62;
     this.marsAge = 1.88;
@@ -26,7 +27,7 @@ export default class GalacticAgeCalculator {
   }
 
   earthYearsPassed(){
-    let earthYearsPassed = this.earthAge - this.passedEarthAge
+    let earthYearsPassed = this.earthAge - this.passedEarthAge;
     return earthYearsPassed;
   }
 
@@ -48,6 +49,11 @@ export default class GalacticAgeCalculator {
   jupiterYearsPassed(){
     let jupiterYearsPassed = this.earthYearsPassed();
     return jupiterYearsPassed / this.jupiterAge + " Jupiter years have passed";
+  }
+
+  earthYearsYetToPass(){
+    let earthYearsYetToPass = this.futureEarthAge - this.earthAge;
+    return earthYearsYetToPass;
   }
 }
 

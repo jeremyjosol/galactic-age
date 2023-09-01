@@ -90,17 +90,17 @@ describe('Super Galactic Passed Planetary Birthdays', () => {
 });
 
 describe('Super Galactic Yet To Pass Planetary Birthdays', () => {
-  const earthAge = 27;
-  const futureEarthAge = 75;
+  let humanInput;
   
   beforeEach(() => {
-    humanInput = new GalacticAgeCalculator(futureEarthAge, earthAge);
+    const earthAge = 27;
+    const futureEarthAge = 75;
+    humanInput = new GalacticAgeCalculator(earthAge, undefined, futureEarthAge);
   });
 //test 13
   test('it should return the correct amount of earthYearsYetToPass when called', () => {
     const earthYearsYetToPass = humanInput.earthYearsYetToPass();
     expect(earthYearsYetToPass).toEqual(48);
-
   });
 
 });
