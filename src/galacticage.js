@@ -2,25 +2,26 @@ export default class GalacticAgeCalculator {
   
   constructor(earthAge){
     this.earthAge = earthAge;
+    this.mercuryAge = 0.24;
+    this.venusAge = 0.62;
+    this.marsAge = 1.88;
+    this.jupiterAge = 11.86;
   }
 
   mercuryYears(){
-    const mercuryAge = 0.24;
-    return this.earthAge / mercuryAge;
+    return this.earthAge / this.mercuryAge;
   }
 
   venusYears(){
-    const venusAge = 0.62;
-    return this.earthAge / venusAge;
+    return this.earthAge / this.venusAge;
   }
 
   marsYears(){
-    const marsAge = 1.88;
-    return this.earthAge / marsAge;
+    return this.earthAge / this.marsAge;
   }
 
   jupiterYears(){
-    const jupiterAge = 11.86;
-    return this.earthAge / jupiterAge;
+    return this.earthAge / this.jupiterAge;
   }
 }
+  
