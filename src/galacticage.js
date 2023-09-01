@@ -29,6 +29,11 @@ export default class GalacticAgeCalculator {
     let earthYearsPassed = this.earthAge - this.passedEarthAge
     return earthYearsPassed;
   }
+
+  mercuryYearsPassed(){
+    let mercuryYearsPassed = this.earthYearsPassed();
+    return mercuryYearsPassed / 0.24;
+  }
 }
 
 

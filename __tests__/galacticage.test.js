@@ -58,12 +58,14 @@ describe('Super Galactic Passed Birthdays', () => {
 });
 
   beforeEach(() => {
-    humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
+    let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
 });
+
 //test 9
   test('it should return the correct amount of mercuryYearsPassed when called', () => {
+    let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
     const mercuryYearsPassed = humanInput.mercuryYearsPassed();
     expect(mercuryYearsPassed).toEqual(70.83333333333334);
 });
-
 });
+
