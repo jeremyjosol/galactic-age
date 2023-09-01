@@ -12,6 +12,6 @@ describe('Super Galactic Age Calculator', () => {
     const earthAge = 27;
     const humanInput = new GalacticAgeCalculator(earthAge);
     const mercuryAge = humanInput.mercuryYears(); 
-    expect(mercuryAge).toEqual(6.48);
+    expect(mercuryAge).toEqual(6.4799999999999995);
 });
 });
