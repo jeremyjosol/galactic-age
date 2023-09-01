@@ -34,3 +34,14 @@ describe('Super Galactic Age Calculator', () => {
     expect(jupiterAge).toEqual(320.21999999999997);
 });
 });
+
+describe('Super Galactic Passed Birthdays', () => {
+  let humanInput;
+  const earthAge = 27;
+  const pastEarthAge = 10;
+//test 6
+  test('it should return the difference of two parameters');
+  const ageDifference = earthAge - pastEarthAge;
+  expect(ageDifference).toEqual(17);
+  
+});
