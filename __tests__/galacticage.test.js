@@ -50,12 +50,17 @@ describe('Super Galactic Passed Birthdays', () => {
   const passedBirthday = humanInput.mercuryYears();
   expect(passedBirthday).toEqual(70.83333333333334);
 });
-//test 8
+//test 8 pass
   test('it should return the correct amount of earthBirthdaysPassed when called', () => {
   let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
   const earthYearsPassed = humanInput.earthYearsPassed();
   expect(earthYearsPassed).toEqual(17);
 });
 
+  beforeEach(() => {
+    const earthAge = 27;
+    const PassedEarthAge = 10;
+    humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
+});
 
 });
