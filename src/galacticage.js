@@ -58,7 +58,7 @@ export default class GalacticAgeCalculator {
 
   mercuryYearsYetToPass(){
     let mercuryYearsYetToPass = this.earthYearsYetToPass();
-    return mercuryYearsYetToPass / this.mercuryAge;
+    return mercuryYearsYetToPass / this.mercuryAge + " Mercury years yet to pass";
   }
 }
 
