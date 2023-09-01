@@ -54,7 +54,7 @@ describe('Super Galactic Passed Birthdays', () => {
   test('it should return the correct amount of earthBirthdaysPassed when called', () => {
   let humanInput = new GalacticAgeCalculator(earthAge, passedEarthAge);
   const earthYearsPassed = humanInput.earthYearsPassed();
-  expect(earthYearsPassed).toEqual(70.83333333333334);
+  expect(earthYearsPassed).toEqual(17);
 });
 
 

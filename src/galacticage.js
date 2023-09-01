@@ -1,7 +1,8 @@
 export default class GalacticAgeCalculator {
   
-  constructor(earthAge){
+  constructor(earthAge, passedEarthAge){
     this.earthAge = earthAge;
+    this.passedEarthAge = passedEarthAge;
     this.mercuryAge = 0.24;
     this.venusAge = 0.62;
     this.marsAge = 1.88;
@@ -23,5 +24,12 @@ export default class GalacticAgeCalculator {
   jupiterYears(){
     return this.earthAge / this.jupiterAge;
   }
+
+  earthYearsPassed(){
+    let earthYearsPassed = this.earthAge - this.passedEarthAge
+    return earthYearsPassed;
+  }
 }
+
+
   
