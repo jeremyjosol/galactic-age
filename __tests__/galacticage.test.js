@@ -23,5 +23,4 @@ describe('Super Galactic Age Calculator', () => {
     const venusAge = humanInput.venusYears();
     expect(venusAge).toEqual(16.74);
 });
-
 });
