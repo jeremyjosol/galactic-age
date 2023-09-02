@@ -35,21 +35,21 @@ describe('Super Galactic Passed Planetary Birthdays', () => {
   test('it should return the correct amount of mercuryYearsPassed when called', () => {
     humanInput = new PassedGalacticAgeCalculator(earthAge, passedEarthAge);
     const mercuryYearsPassed = humanInput.mercuryYearsPassed();
-    expect(mercuryYearsPassed).toEqual(70.83333333333334 + " Mercury years have passed");
+    expect(mercuryYearsPassed).toEqual(70.83333333333334);
   });
 //test 10 pass
   test('it should return the correct amount of venusYearsPassed when called', () => {
     const venusYearsPassed = humanInput.venusYearsPassed();
-    expect(venusYearsPassed).toEqual(27.419354838709676 + " Venus years have passed");
+    expect(venusYearsPassed).toEqual(27.419354838709676);
   });
 //test 11 pass
   test('it should return the correct amount of marsYearsPassed when called', () => {
     const marsYearsPassed = humanInput.marsYearsPassed();
-    expect(marsYearsPassed).toEqual(9.042553191489363 + " Mars years have passed");
+    expect(marsYearsPassed).toEqual(9.042553191489363);
   });
 //test 12 pass
   test('it should return the correct amount of jupiterYearsPassed when called', () => {
     const jupiterYearsPassed = humanInput.jupiterYearsPassed();
-    expect(jupiterYearsPassed).toEqual(1.4333895446880272 + " Jupiter years have passed")
+    expect(jupiterYearsPassed).toEqual(1.4333895446880272)
   });
 });

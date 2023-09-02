@@ -13,21 +13,21 @@ export default class PassedGalacticAgeCalculator extends GalacticAgeCalculator {
 
   mercuryYearsPassed(){
     let mercuryYearsPassed = this.earthYearsPassed();
-    return mercuryYearsPassed / this.mercuryAge + " Mercury years have passed";
+    return mercuryYearsPassed / this.mercuryAge;
   }
 
   venusYearsPassed(){
     let venusYearsPassed = this.earthYearsPassed();
-    return venusYearsPassed / this.venusAge + " Venus years have passed";
+    return venusYearsPassed / this.venusAge; 
   }
 
   marsYearsPassed(){
     let marsYearsPassed = this.earthYearsPassed();
-    return marsYearsPassed / this.marsAge + " Mars years have passed";
+    return marsYearsPassed / this.marsAge;
   }
 
   jupiterYearsPassed(){
     let jupiterYearsPassed = this.earthYearsPassed();
-    return jupiterYearsPassed / this.jupiterAge + " Jupiter years have passed";
+    return jupiterYearsPassed / this.jupiterAge;
   }
 }
