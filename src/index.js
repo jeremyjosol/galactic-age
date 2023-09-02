@@ -9,6 +9,8 @@ import YearsYetToPassCalculator from './js/yearsyettopass.js';
 window.onload = () => {
   const humanInput = document.getElementById('humanInput');
   const results = document.getElementById('results');
+  const results2 = document.getElementById('results2');
+  const results3 = document.getElementById('results3');
 
   humanInput.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -39,21 +41,23 @@ window.onload = () => {
     const jupiterYetToPass = yearsYetToPassCalculator.jupiterYearsYetToPass();
 
     results.innerHTML = 
-      `<h2>Super Galactic Ages:</h2>
+      `<h2>Current years:</h2>
         <p>Earth Age: ${earthAge} years.</p>
         <p>Mercury Age: ${mercuryAge.toFixed(2)} years.</p>
         <p>Venus Age: ${venusAge.toFixed(2)} years.</p>
         <p>Mars Age: ${marsAge.toFixed(2)} years.</p>
-        <p>Jupiter Age: ${jupiterAge.toFixed(2)} years.</p>
-
-        <h2>Galactic Years Passed:</h2>
+        <p>Jupiter Age: ${jupiterAge.toFixed(2)} years.</p>`;
+    
+    results2.innerHTML =
+      `<h2>Years Passed:</h2>
         <p>${earthYearsPassed} Earth years have passed.</p>
         <p>${mercuryYearsPassed.toFixed(2)} Mercury years have passed.</p>
         <p>${venusYearsPassed.toFixed(2)} Venus years have passed.</p>
         <p>${marsYearsPassed.toFixed(2)} Mars years have passed.</p>
-        <p> ${jupiterYearsPassed.toFixed(2)} Jupiter years have passed.</p>
-
-        <h2>Galactic Years Yet To Pass:</h2>
+        <p> ${jupiterYearsPassed.toFixed(2)} Jupiter years have passed.</p>`;
+      
+    results3.innerHTML =
+      `<h2>Years Yet To Pass:</h2>
         <p>${earthYearsYetToPass.toFixed(2)} Earth years yet to pass.</p>
         <p>${mercuryYetToPass.toFixed(2)} Mercury years yet to pass.</p>
         <p>${venusYetToPass.toFixed(2)} Venus years yet to pass.</p>

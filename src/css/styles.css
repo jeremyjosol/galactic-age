@@ -2,4 +2,66 @@ body{
   background-color: black;
   color: white;
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  margin: auto;
+  width: 500px;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#title{
+  margin: auto;
+  margin-top: 25px;
+  width: 350px;
+}
+
+#humanInput{
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: auto;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  background: linear-gradient(-45deg, #001aff, #051824, #281767, #1c2952);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 20px;
+}
+
+.form-control{
+  margin: auto;
+  margin-bottom: 25px;
+  width: 110px;
+}
+
+#results{
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100px;
+  float: left;
+}
+
+#results2{
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100px;
+  float: left;
+}
+
+#results3{
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100px;
+  float: left;
 }
