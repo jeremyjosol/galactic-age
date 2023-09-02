@@ -40,25 +40,25 @@ window.onload = () => {
 
     results.innerHTML = 
       `<h2>Super Galactic Ages:</h2>
-        <p>Earth Age: ${earthAge} years</p>
-        <p>Mercury Age: ${mercuryAge.toFixed(2)} years</p>
-        <p>Venus Age: ${venusAge.toFixed(2)} years</p>
-        <p>Mars Age: ${marsAge.toFixed(2)} years</p>
-        <p>Jupiter Age: ${jupiterAge.toFixed(2)} years</p>
+        <p>Earth Age: ${earthAge} years.</p>
+        <p>Mercury Age: ${mercuryAge.toFixed(2)} years.</p>
+        <p>Venus Age: ${venusAge.toFixed(2)} years.</p>
+        <p>Mars Age: ${marsAge.toFixed(2)} years.</p>
+        <p>Jupiter Age: ${jupiterAge.toFixed(2)} years.</p>
 
-        <h2>Super Galactic Passed Years:</h2>
-        <p>${earthYearsPassed} Earth years have passed</p>
-        <p>${mercuryYearsPassed.toFixed(2)}</p>
-        <p>${venusYearsPassed.toFixed(2)}</p>
-        <p>${marsYearsPassed.toFixed(2)} </p>
-        <p> ${jupiterYearsPassed.toFixed(2)}</p>
+        <h2>Galactic Years Passed:</h2>
+        <p>${earthYearsPassed} Earth years have passed.</p>
+        <p>${mercuryYearsPassed.toFixed(2)} Mercury years have passed.</p>
+        <p>${venusYearsPassed.toFixed(2)} Venus years have passed.</p>
+        <p>${marsYearsPassed.toFixed(2)} Mars years have passed.</p>
+        <p> ${jupiterYearsPassed.toFixed(2)} Jupiter years have passed.</p>
 
-        <h2>Super Galactic Years Yet To Pass:</h2>
-        <p>${earthYearsYetToPass.toFixed(2)}</p>
-        <p>${mercuryYetToPass.toFixed(2)}</p>
-        <p>${venusYetToPass.toFixed(2)}</p>
-        <p>${marsYetToPass.toFixed(2)}</p>
-        <p>${jupiterYetToPass.toFixed(2)}</p>`;
+        <h2>Galactic Years Yet To Pass:</h2>
+        <p>${earthYearsYetToPass.toFixed(2)} Earth years yet to pass.</p>
+        <p>${mercuryYetToPass.toFixed(2)} Mercury years yet to pass.</p>
+        <p>${venusYetToPass.toFixed(2)} Venus years yet to pass.</p>
+        <p>${marsYetToPass.toFixed(2)} Mars years yet to pass.</p>
+        <p>${jupiterYetToPass.toFixed(2)} Jupiter years yet to pass.</p>`;
   });
 };
 
