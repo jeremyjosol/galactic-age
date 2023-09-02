@@ -13,21 +13,21 @@ export default class YearsYetToPassCalculator extends GalacticAgeCalculator {
 
   mercuryYearsYetToPass(){
     let mercuryYearsYetToPass = this.earthYearsYetToPass();
-    return mercuryYearsYetToPass / this.mercuryAge + " Mercury years yet to pass";
+    return mercuryYearsYetToPass / this.mercuryAge;
   }
 
   venusYearsYetToPass(){
     let venusYearsYetToPass = this.earthYearsYetToPass();
-    return venusYearsYetToPass / this.venusAge + " Venus years yet to pass";
+    return venusYearsYetToPass / this.venusAge;
   }
 
   marsYearsYetToPass(){
     let marsYearsYetToPass = this.earthYearsYetToPass();
-    return marsYearsYetToPass / this.marsAge + " Mars years yet to pass";
+    return marsYearsYetToPass / this.marsAge;
   }
 
   jupiterYearsYetToPass(){
     let jupiterYearsYetToPass = this.earthYearsYetToPass();
-    return jupiterYearsYetToPass / this.jupiterAge + " Jupiter years yet to pass";
+    return jupiterYearsYetToPass / this.jupiterAge;
   }
 }
