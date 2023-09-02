@@ -5,19 +5,17 @@ import './css/styles.css';
 import GalacticAgeCalculator from './js/galacticage.js';
 import PassedGalacticAgeCalculator from './js/passedgalacticage.js';
 import YearsYetToPassCalculator from './js/yearsyettopass.js';
+
 window.onload = () => {
   const humanInput = document.getElementById('humanInput');
-  const resultDiv = document.getElementById('results');
-
+  const results = document.getElementById('results');
 
   humanInput.addEventListener('submit', (e) => {
     e.preventDefault();
 
-
     const earthAge = parseFloat(document.getElementById('earthAge').value);
     const passedEarthAge = parseFloat(document.getElementById('passedEarthAge').value);
     const futureEarthAge = parseFloat(document.getElementById('futureEarthAge').value);
-
 
     const galacticAgeCalculator = new GalacticAgeCalculator(earthAge, passedEarthAge, futureEarthAge);
 
@@ -27,11 +25,11 @@ window.onload = () => {
     const jupiterAge = galacticAgeCalculator.jupiterYears();
 
     const passedGalacticAgeCalculator = new PassedGalacticAgeCalculator(earthAge, passedEarthAge);
-    const earthPassed = passedGalacticAgeCalculator.earthYearsPassed();
-    const mercuryPassed = passedGalacticAgeCalculator.mercuryYearsPassed();
-    const venusPassed = passedGalacticAgeCalculator.venusYearsPassed();
-    const marsPassed = passedGalacticAgeCalculator.marsYearsPassed();
-    const jupiterPassed = passedGalacticAgeCalculator.jupiterYearsPassed();
+    const earthYearsPassed = passedGalacticAgeCalculator.earthYearsPassed();
+    const mercuryYearsPassed = passedGalacticAgeCalculator.mercuryYearsPassed();
+    const venusYearsPassed = passedGalacticAgeCalculator.venusYearsPassed();
+    const marsYearsPassed = passedGalacticAgeCalculator.marsYearsPassed();
+    const jupiterYearsPassed = passedGalacticAgeCalculator.jupiterYearsPassed();
 
     const yearsYetToPassCalculator = new YearsYetToPassCalculator(earthAge, futureEarthAge);
     const earthYearsYetToPass = yearsYetToPassCalculator.earthYearsYetToPass();
@@ -40,7 +38,7 @@ window.onload = () => {
     const marsYetToPass = yearsYetToPassCalculator.marsYearsYetToPass();
     const jupiterYetToPass = yearsYetToPassCalculator.jupiterYearsYetToPass();
 
-    resultDiv.innerHTML = 
+    results.innerHTML = 
       `<h2>Super Galactic Ages:</h2>
         <p>Earth Age: ${earthAge} years</p>
         <p>Mercury Age: ${mercuryAge.toFixed(2)} years</p>
@@ -49,19 +47,18 @@ window.onload = () => {
         <p>Jupiter Age: ${jupiterAge.toFixed(2)} years</p>
 
         <h2>Super Galactic Passed Years:</h2>
-        <p>${earthPassed} Earth years have passed</p>
-        <p>${mercuryPassed}</p>
-        <p>${venusPassed}</p>
-        <p>${marsPassed} </p>
-        <p> ${jupiterPassed}</p>
+        <p>${earthYearsPassed} Earth years have passed</p>
+        <p>${mercuryYearsPassed.toFixed(2)}</p>
+        <p>${venusYearsPassed.toFixed(2)}</p>
+        <p>${marsYearsPassed.toFixed(2)} </p>
+        <p> ${jupiterYearsPassed.toFixed(2)}</p>
 
         <h2>Super Galactic Years Yet To Pass:</h2>
-        <p>${earthYearsYetToPass}</p>
-        <p>${mercuryYetToPass}</p>
-        <p>${venusYetToPass}</p>
-        <p>${marsYetToPass}</p>
-        <p>${jupiterYetToPass}</p>
-      `;
+        <p>${earthYearsYetToPass.toFixed(2)}</p>
+        <p>${mercuryYetToPass.toFixed(2)}</p>
+        <p>${venusYetToPass.toFixed(2)}</p>
+        <p>${marsYetToPass.toFixed(2)}</p>
+        <p>${jupiterYetToPass.toFixed(2)}</p>`;
   });
 };
 
