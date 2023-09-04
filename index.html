@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Galactic Age Calculator</title>
+</head>
+<body>
+  <form id="humanInput">
+    <div id="title">
+      <h1>SUPER GALACTIC AGE CALCULATOR</h1>
+      <p>A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This is an application that determines a user's age based on a planet's solar years.</p>
+    </div>
+    <label for="earthAge">Enter your age on Earth:</label>
+    <input class="form-control" type="number" id="earthAge" min="0" required><br>
+
+    <label for="passedEarthAge">Enter a passed age on Earth:</label>
+    <input class="form-control" type="number" id="passedEarthAge" min="0" required><br>
+
+    <label for="futureEarthAge">Enter a future age on Earth:</label>
+    <input class="form-control" type="number" id="futureEarthAge" min="0" required><br>
+
+    <button type="submit" id="calculate-age" class="btn btn-success">Calculate</button>
+    <br />
+  </form>
+
+  
+    <div id="results-container">
+    <div id="results"><p></p></div>
+    <div id="results2"><p></p></div>
+    <div id="results3"><p></p></div>
+    </div>
+    
+<script src="bundle.js"></script></body>
+</html>
